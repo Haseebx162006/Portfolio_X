@@ -17,13 +17,69 @@ export function ExperienceSection() {
       </div>
 
       <div className="space-y-14">
-        {/* Experience Item 1 */}
+        {/* Open Source Engineer */}
         <div className="reveal" style={{ transitionDelay: "0ms" }}>
+          <div className="grid gap-4 md:grid-cols-[180px_1fr] md:gap-12">
+            <div className="font-mono text-sm text-faint">2026 – Present</div>
+            <div>
+              <div className="flex flex-wrap items-baseline justify-between gap-2">
+                <h3 className="text-base font-medium text-strong">
+                  Open Source Engineer
+                </h3>
+                <a
+                  href="https://github.com/Haseebx162006/Open_Source"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group/link link-underline inline-flex items-center gap-1 font-mono text-xs text-muted transition-colors hover:text-strong"
+                >
+                  <span>Proof of Work</span>
+                  <ArrowUpRight
+                    size={14}
+                    strokeWidth={1.5}
+                    className="transition-transform duration-300 group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5"
+                  />
+                </a>
+              </div>
+              <p className="mt-1 text-sm text-muted">
+                Social Organization — AOSSIE-Org
+              </p>
+              <ul className="mt-4 space-y-2.5 text-sm leading-relaxed text-muted">
+                <li className="flex gap-3">
+                  <span
+                    className="mt-[9px] h-px w-3 shrink-0 bg-faint"
+                    aria-hidden="true"
+                  />
+                  <span>
+                    <strong className="font-semibold text-strong">
+                      OpenVerifiableLLM
+                    </strong>
+                    : Hardened cryptographic AI model provenance and supply chain security by enforcing pinned Sigstore/OIDC identity checks and fail-closed validation on untrusted manifests, alongside resolving PyTorch dependency constraints.
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <span
+                    className="mt-[9px] h-px w-3 shrink-0 bg-faint"
+                    aria-hidden="true"
+                  />
+                  <span>
+                    <strong className="font-semibold text-strong">
+                      Gitcord
+                    </strong>
+                    : Eliminated event-drop race conditions by binding cursor progression to downstream delivery acknowledgments, built HTTP 429 rate-limiting backoff guards, and audited identity-linking and regex security vulnerabilities.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Experience Item: Technical Lead */}
+        <div className="reveal" style={{ transitionDelay: "60ms" }}>
           <div className="grid gap-4 md:grid-cols-[180px_1fr] md:gap-12">
             <div className="font-mono text-sm text-faint">2025 – Present</div>
             <div>
               <h3 className="text-base font-medium text-strong">
-                Technical Co-Lead
+                Technical Lead
               </h3>
               <p className="mt-1 text-sm text-muted">
                 Google Developers Groups on Campus (GDGoC) — COMSATS Lahore
@@ -79,56 +135,6 @@ export function ExperienceSection() {
                     </strong>{" "}
                     in Programming Fundamentals and Object-Oriented Programming
                     while promoting hands-on technical learning.
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        {/* Experience Item 2: Open Source Engineer */}
-        <div className="reveal" style={{ transitionDelay: "60ms" }}>
-          <div className="grid gap-4 md:grid-cols-[180px_1fr] md:gap-12">
-            <div className="font-mono text-sm text-faint">2025 – Present</div>
-            <div>
-              <div className="flex flex-wrap items-baseline justify-between gap-2">
-                <h3 className="text-base font-medium text-strong">
-                  Open Source Engineer
-                </h3>
-                <a
-                  href="https://github.com/Haseebx162006/Open_Source"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group/link link-underline inline-flex items-center gap-1 font-mono text-xs text-muted transition-colors hover:text-strong"
-                >
-                  <span>Repository</span>
-                  <ArrowUpRight
-                    size={14}
-                    strokeWidth={1.5}
-                    className="transition-transform duration-300 group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5"
-                  />
-                </a>
-              </div>
-              <p className="mt-1 text-sm text-muted">
-                Social Organization — AOSSIE-Org
-              </p>
-              <ul className="mt-4 space-y-2 text-sm leading-relaxed text-muted">
-                <li className="flex gap-3">
-                  <span
-                    className="mt-[9px] h-px w-3 shrink-0 bg-faint"
-                    aria-hidden="true"
-                  />
-                  <span>
-                    Contributing core fixes and security audits across open-source repositories, focusing on Sigstore/OIDC supply chain security, distributed concurrency, and rate-limiting resilience. Detailed proof of work and merged PRs are documented in the{" "}
-                    <a
-                      href="https://github.com/Haseebx162006/Open_Source"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="link-underline font-medium text-strong hover:text-strong"
-                    >
-                      Proof of Work repository
-                    </a>
-                    .
                   </span>
                 </li>
               </ul>
