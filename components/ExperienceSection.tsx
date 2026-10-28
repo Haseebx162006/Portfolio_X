@@ -43,17 +43,22 @@ export function ExperienceSection() {
               <p className="mt-1 text-sm text-muted">
                 Social Organization — AOSSIE-Org
               </p>
-              <ul className="mt-4 space-y-2.5 text-sm leading-relaxed text-muted">
+              <ul className="mt-4 space-y-2 text-sm leading-relaxed text-muted">
                 <li className="flex gap-3">
                   <span
                     className="mt-[9px] h-px w-3 shrink-0 bg-faint"
                     aria-hidden="true"
                   />
                   <span>
+                    Core contributor to open-source infrastructure with{" "}
                     <strong className="font-semibold text-strong">
-                      OpenVerifiableLLM
-                    </strong>
-                    : Hardened cryptographic AI model provenance and supply chain security by enforcing pinned Sigstore/OIDC identity checks and fail-closed validation on untrusted manifests, alongside resolving PyTorch dependency constraints.
+                      5/5 PRs merged (100% acceptance rate)
+                    </strong>{" "}
+                    and{" "}
+                    <strong className="font-semibold text-strong">
+                      9 technical issues &amp; security audits
+                    </strong>{" "}
+                    tracked across flagship projects.
                   </span>
                 </li>
                 <li className="flex gap-3">
@@ -62,10 +67,11 @@ export function ExperienceSection() {
                     aria-hidden="true"
                   />
                   <span>
+                    Engineered high-impact fixes in{" "}
                     <strong className="font-semibold text-strong">
-                      Gitcord
+                      Sigstore/OIDC supply chain security
                     </strong>
-                    : Eliminated event-drop race conditions by binding cursor progression to downstream delivery acknowledgments, built HTTP 429 rate-limiting backoff guards, and audited identity-linking and regex security vulnerabilities.
+                    , distributed concurrency pipelines (at-least-once cursor delivery), and API rate-limiting resilience.
                   </span>
                 </li>
               </ul>
