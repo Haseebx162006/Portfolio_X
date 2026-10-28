@@ -17,14 +17,14 @@ export function ExperienceSection() {
       </div>
 
       <div className="space-y-14">
-        {/* Open Source Engineer */}
+        {/* Open Source AI Engineer */}
         <div className="reveal" style={{ transitionDelay: "0ms" }}>
           <div className="grid gap-4 md:grid-cols-[180px_1fr] md:gap-12">
             <div className="font-mono text-sm text-faint">2026 – Present</div>
             <div>
               <div className="flex flex-wrap items-baseline justify-between gap-2">
                 <h3 className="text-base font-medium text-strong">
-                  Open Source Engineer
+                  Open Source AI Engineer
                 </h3>
                 <a
                   href="https://github.com/Haseebx162006/Open_Source"
@@ -50,15 +50,15 @@ export function ExperienceSection() {
                     aria-hidden="true"
                   />
                   <span>
-                    Core contributor to open-source infrastructure with{" "}
+                    Contributing production-grade infrastructure and security fixes across flagship AI and distributed systems, achieving a{" "}
                     <strong className="font-semibold text-strong">
-                      5/5 PRs merged (100% acceptance rate)
+                      100% PR merge rate (5/5 merged)
                     </strong>{" "}
-                    and{" "}
+                    and authoring{" "}
                     <strong className="font-semibold text-strong">
-                      9 technical issues &amp; security audits
-                    </strong>{" "}
-                    tracked across flagship projects.
+                      9 critical issues &amp; architectural audits
+                    </strong>
+                    .
                   </span>
                 </li>
                 <li className="flex gap-3">
@@ -67,11 +67,11 @@ export function ExperienceSection() {
                     aria-hidden="true"
                   />
                   <span>
-                    Engineered high-impact fixes in{" "}
+                    Hardened cryptographic LLM provenance via{" "}
                     <strong className="font-semibold text-strong">
-                      Sigstore/OIDC supply chain security
-                    </strong>
-                    , distributed concurrency pipelines (at-least-once cursor delivery), and API rate-limiting resilience.
+                      Sigstore/OIDC identity pinning
+                    </strong>{" "}
+                    to prevent model tampering, optimized PyTorch dependency ecosystems, and engineered fault-tolerant ingestion pipelines with guaranteed at-least-once concurrency.
                   </span>
                 </li>
               </ul>
