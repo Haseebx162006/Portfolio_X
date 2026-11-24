@@ -11,7 +11,7 @@ A minimal, high-performance, and responsive personal portfolio website for **Has
 - **Top Reading Progress Bar**: Real-time scroll indicator tracking window scroll position.
 - **Animated Metric Counters**: Smooth cubic-eased number counter animations triggered upon scrolling into view.
 - **Continuous Tech Marquee**: Infinite smooth-scrolling ticker with scalable SVG brand icons.
-- **Selected Work**: Featured project cards showcasing **CodeCrew**, **MentorX**, and **CampuzLift** with live links, detailed architecture bullet points, and technology badges.
+- **Selected Work**: Featured project cards showcasing **DelaySense**, **MentorX**, and **CampuzLift** with live links, detailed architecture bullet points, and technology badges.
 - **Track Record & Leadership**: Timeline of technical leadership at **Google Developer Groups on Campus (GDGoC)**, hackathon wins, and mentorship achievements.
 - **Technical Capabilities**: 4-card breakdown covering AI & Agent Systems, Machine Learning & Data, Backend & Systems, and Databases & DevOps.
 - **About Section**: Professional bio, grayscale-to-color hover transition portrait, education credentials (COMSATS University Islamabad, 3.92 CGPA), and honors.
@@ -49,7 +49,7 @@ A minimal, high-performance, and responsive personal portfolio website for **Has
 │   ├── ProgressBar.tsx      # Fixed top scroll progress bar
 │   ├── ScrollReveal.tsx     # IntersectionObserver scroll reveal animations
 │   ├── ThemeToggle.tsx      # Dark/Light mode switcher button
-│   └── WorkSection.tsx      # Featured project cards (CodeCrew, MentorX, CampuzLift)
+│   └── WorkSection.tsx      # Featured project cards (DelaySense, MentorX, CampuzLift)
 ├── public/
 │   ├── brand-sprite.svg     # SVG symbol definitions for programming languages & tools
 │   ├── haseeb.jpeg          # Profile photograph

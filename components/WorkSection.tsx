@@ -8,33 +8,37 @@ interface Project {
   subtitle: string;
   description: string;
   bullets: string[];
-  liveUrl: string;
+  liveUrl?: string;
+  githubUrl?: string;
   featured?: boolean;
   tags: { name: string; brandIcon?: string }[];
 }
 
 const PROJECTS: Project[] = [
   {
-    id: "codecrew",
+    id: "delaysense",
     num: "01",
-    title: "CodeCrew",
-    subtitle: "Autonomous Multi-Agent Software House",
+    title: "DelaySense",
+    subtitle: "AI Supply Chain Delay Prediction & Risk Engine",
     description:
-      "Autonomous multi-agent software engineering platform that simulates a complete development team for repository analysis, architecture planning, code generation, testing, and technical documentation.",
+      "Enterprise-grade predictive logistics decision engine calibrated on 180,000+ multi-modal freight records to forecast shipment delivery delays, assess route bottlenecks, and mitigate contractual SLA penalties before cargo departure.",
     bullets: [
-      "Designed a stateful LangGraph orchestration workflow with specialized Planner, Backend, Frontend, Database, Testing, and Documentation agents collaborating through structured agent state.",
-      "Integrated GitHub automation for repository cloning, codebase analysis, feature-branch creation, automated implementation, and generation of verified Pull Requests.",
-      "Implemented fault-tolerant workflow execution using PostgreSQL/SQLite checkpointers, JWT/Argon2 authentication, sandboxed repository processing, and automated CI/CD validation using Ruff, Prettier, and TypeScript.",
+      "Architected a Two-Tier Stacking Ensemble combining LightGBM, XGBoost, and CatBoost with an L2-regularized logistic regression meta-learner, achieving ~89.5% precision on delayed shipments and 0.855 PR-AUC.",
+      "Engineered an automated preprocessing pipeline extracting 39 temporal, financial, and spatial features with median imputation, categorical handling, and calibrated risk tiers (Low <35%, Medium 35–65%, High >65%) at a 0.45 decision threshold.",
+      "Developed high-throughput FastAPI REST endpoints for sub-second batch CSV manifest inference, paired with a Next.js 14 telemetry workbench featuring single-order simulation and what-if sensitivity stress testing.",
     ],
-    liveUrl: "https://codecrew-ashen.vercel.app/",
+    githubUrl: "https://github.com/Haseebx162006/DelaySense",
     featured: true,
     tags: [
-      { name: "LangGraph", brandIcon: "LangGraph" },
-      { name: "FastAPI", brandIcon: "FastAPI" },
       { name: "Python", brandIcon: "Python" },
-      { name: "React", brandIcon: "React" },
-      { name: "PostgreSQL", brandIcon: "PostgreSQL" },
-      { name: "GitHub API", brandIcon: "GitHub" },
+      { name: "FastAPI", brandIcon: "FastAPI" },
+      { name: "Next.js", brandIcon: "Next.js" },
+      { name: "TypeScript", brandIcon: "TypeScript" },
+      { name: "Scikit-Learn", brandIcon: "Scikit-learn" },
+      { name: "Docker", brandIcon: "Docker" },
+      { name: "LightGBM" },
+      { name: "CatBoost" },
+      { name: "XGBoost" },
     ],
   },
   {
@@ -50,6 +54,7 @@ const PROJECTS: Project[] = [
       "Developed secure multi-role access with Google OAuth and role-based authorization, alongside an admin document ingestion pipeline for PDF extraction, configurable chunking, embedding generation, and vector indexing.",
     ],
     liveUrl: "https://mentor-x-beryl.vercel.app/",
+    githubUrl: "https://github.com/Haseebx162006/MentorX",
     featured: true,
     tags: [
       { name: "LangGraph", brandIcon: "LangGraph" },
@@ -124,7 +129,7 @@ export function WorkSection() {
               {/* Title & Link */}
               <h3 className="mt-8 text-xl font-medium tracking-tight text-strong">
                 <a
-                  href={project.liveUrl}
+                  href={project.liveUrl || project.githubUrl || "#"}
                   target="_blank"
                   rel="noreferrer"
                   className="group/title link-underline inline-flex items-center gap-1"
@@ -159,21 +164,38 @@ export function WorkSection() {
                 ))}
               </ul>
 
-              {/* Live Link */}
+              {/* Project Links */}
               <p className="mt-5 flex flex-wrap gap-x-6 gap-y-1 text-sm">
-                <a
-                  href={project.liveUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group/link link-underline inline-flex items-center gap-1 text-muted transition-colors hover:text-strong"
-                >
-                  Live Demo
-                  <ArrowUpRight
-                    size={14}
-                    strokeWidth={1.5}
-                    className="transition-transform duration-300 group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5"
-                  />
-                </a>
+                {project.liveUrl && (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="group/link link-underline inline-flex items-center gap-1 text-muted transition-colors hover:text-strong"
+                  >
+                    Live Demo
+                    <ArrowUpRight
+                      size={14}
+                      strokeWidth={1.5}
+                      className="transition-transform duration-300 group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5"
+                    />
+                  </a>
+                )}
+                {project.githubUrl && (
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="group/link link-underline inline-flex items-center gap-1 text-muted transition-colors hover:text-strong"
+                  >
+                    GitHub
+                    <ArrowUpRight
+                      size={14}
+                      strokeWidth={1.5}
+                      className="transition-transform duration-300 group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5"
+                    />
+                  </a>
+                )}
               </p>
 
               {/* Badges */}
