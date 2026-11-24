@@ -50,15 +50,15 @@ export function ExperienceSection() {
                     aria-hidden="true"
                   />
                   <span>
-                    Contributing production-grade infrastructure and security fixes across flagship AI and distributed systems, achieving a{" "}
+                    Achieved a{" "}
                     <strong className="font-semibold text-strong">
                       100% PR merge rate (5/5 merged)
                     </strong>{" "}
-                    and authoring{" "}
+                    and reported{" "}
                     <strong className="font-semibold text-strong">
-                      9 critical issues &amp; architectural audits
-                    </strong>
-                    .
+                      9 key issues and code improvements
+                    </strong>{" "}
+                    across open-source AI and backend projects.
                   </span>
                 </li>
                 <li className="flex gap-3">
@@ -67,11 +67,25 @@ export function ExperienceSection() {
                     aria-hidden="true"
                   />
                   <span>
-                    Hardened cryptographic LLM provenance via{" "}
+                    Strengthened{" "}
                     <strong className="font-semibold text-strong">
-                      Sigstore/OIDC identity pinning
+                      AI model security
                     </strong>{" "}
-                    to prevent model tampering, optimized PyTorch dependency ecosystems, and engineered fault-tolerant ingestion pipelines with guaranteed at-least-once concurrency.
+                    with identity verification checks to prevent tampering, and
+                    cleaned up PyTorch dependencies for faster, smoother setups.
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <span
+                    className="mt-[9px] h-px w-3 shrink-0 bg-faint"
+                    aria-hidden="true"
+                  />
+                  <span>
+                    Built{" "}
+                    <strong className="font-semibold text-strong">
+                      reliable data pipelines
+                    </strong>{" "}
+                    that recover gracefully from errors without losing data.
                   </span>
                 </li>
               </ul>
