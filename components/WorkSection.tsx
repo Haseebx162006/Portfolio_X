@@ -27,6 +27,7 @@ const PROJECTS: Project[] = [
       "Engineered an automated preprocessing pipeline extracting 39 temporal, financial, and spatial features with median imputation, categorical handling, and calibrated risk tiers (Low <35%, Medium 35–65%, High >65%) at a 0.45 decision threshold.",
       "Developed high-throughput FastAPI REST endpoints for sub-second batch CSV manifest inference, paired with a Next.js 14 telemetry workbench featuring single-order simulation and what-if sensitivity stress testing.",
     ],
+    liveUrl: "https://delay-sense.vercel.app/",
     githubUrl: "https://github.com/Haseebx162006/DelaySense",
     featured: true,
     tags: [
